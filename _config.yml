@@ -1,1 +1,40 @@
-theme: jekyll-theme-cayman
+# 核心设置
+remote_theme: mmistakes/minimal-mistakes
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+# 网站信息
+title: "你的名字的个人空间"
+name: "你的名字"
+description: "欢迎来到我的个人网页，这里记录我的想法和作品。"
+url: "https://dao81438.github.io" # 你的网址
+
+# 外观风格 (可以换成: air, aqua, contrast, dark, dirt, neon, sunrise)
+minimal_mistakes_skin: "contrast" 
+
+# 侧边栏作者信息
+author:
+  name: "你的名字"
+  avatar: "https://github.com/identicons/dao81438.png" # 自动获取你的头像
+  bio: "正在建设中的网页..."
+  location: "中国"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/dao81438"
+
+# 默认布局设置
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
